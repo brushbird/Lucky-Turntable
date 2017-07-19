@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>边锋围棋</title>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="format-detection" content="telephone=no,email=no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
+  <meta name="fitsetting" content="width=750,height=1206,mode=0,scale=0">
+  <!--STYLE_PLACEHOLDER-->
+  <link rel="stylesheet" href="c/reset.css">
+  <link rel="stylesheet" href="c/index.css">
+  <script src="j/lib/screen-adaptor.js"></script><!--ignore-->
+</head>
+<body>
+  <div class="wrap">
+    <div class="main">
+      <div class="turnplate">
+        <canvas class="item" id="wheelcanvas" width="516" height="516"></canvas>
+        <img id="tupBtn" class="pointer" src="i/pointer.png">
+      </div>
+    </div>
+    <div class="main-thanks">
+      
+    </div>
+    <div class="main-prize" id="main-prize">
+      <div class="prize-pop">
+        <h1>恭喜您！</h1>
+        <h2>获得<span id="prize-name"></span>！</h2>
+        <p>请填写手机号和姓名，奖品发放将由工作人员联系您。</p>
+        <label>姓名：<input type="text" name="username" ></label>
+        <label>电话：<input type="text" name="userphone" ></label>
+        <h4>若有其他疑问请加官方QQ群：220996757</h4>
+        <div class="pop-info">提交</div>
+      </div>
+      <div class="close_zj"><img src="images/close_1.png" /></div>
+    </div>
+  </div>
+  
+  
+  <script>
+    window.oPageConfig = {
+      oUrl: {
+        'getUserInfo': '/api/user',
+      }
+    }
+  </script>
+
+  <script src="j/lib/jquery-3.1.1.min.js" ></script><!--ignore-->
+  <script src="j/index.js"></script>
+  <script type="text/javascript" src="js/awardRotate.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <!-- <script src="j/lib/vconsole.min.js" ></script> -->
+<!--   <script src="j/lib/axios.min.js"></script>
+  <script src="j/app.js"></script> -->
+
+  <!--SCRIPT_PLACEHOLDER-->
+</body>
+</html>
